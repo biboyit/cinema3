@@ -10,62 +10,63 @@
 </head>
 
 <body>
+<!--Trang đăng nhập-->
 <div data-role="page" id="dangnhap">
-    <div data-role="header" data-theme="b">
-        <h1>Đăng Nhập</h1>
-    </div>
-<div data-role="content">
-    <ul data-role="listview" data-inset="true" data-divider-theme="a">
-        <li data-role="list-divider"><center>Email</center></li>
-    </ul> 
+  <div data-role="header" data-theme="a">
+    <h1>Đăng Nhập</h1>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true" data-divider-theme="b">
+      <li data-role="list-divider">
+        <center>
+          Email
+        </center>
+      </li>
+    </ul>
     <input type="text" name="textinput" id="textinput" value=""  />
-    <ul data-role="listview" data-inset="true" data-divider-theme="a">
-        <li data-role="list-divider"><center>Mật Khẩu</center></li>
-    </ul> 
+    <ul data-role="listview" data-inset="true" data-divider-theme="b">
+      <li data-role="list-divider">
+        <center>
+          Mật Khẩu
+        </center>
+      </li>
+    </ul>
     <input type="password" name="textinput" id="textinput" value=""  />
     <center>
-    <div data-role="controlgroup" data-type="horizontal">
-        <a href="#home" data-role="button">Đăng Nhập</a>
-        <a href="#dangky" data-role="button">Đăng Ký</a>
-        <a href="#" data-role="button">Hủy</a>
-    </div>
+      <div data-role="controlgroup" data-type="horizontal"> <a href="#home" data-role="button">Đăng Nhập</a> <a href="#dangky" data-role="button">Đăng Ký</a> <a href="#splash" data-role="button">Hủy</a> </div>
     </center>
-    </div>
+  </div>
 </div>
-
-
+<!--Trang chủ-->
 <div data-role="page" id="home">
-  <div data-role="header" data-theme="b">
+  <div data-role="header" data-theme="a">
     <h1>Trang Chủ</h1>
     <a href="#popupMenu" data-rel="popup" data-transition="flip" class="ui-btn ui-corner-all  ui-btn-right ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-a">Tùy Chọn</a>
-<div data-role="popup" id="popupMenu" data-theme="a">
-        <ul data-role="listview" data-inset="true" style="min-width:210px;">
-            <li><a href="#">Tìm Kiếm</a></li>
-            <li><a href="#">Đổi Mật Khẩu</a></li>
-            <li><a href="#dangnhap">Đăng Xuất</a></li>
-            <li><a href="#">Thoát</a></li>
-        </ul>
-</div>   
+    <div data-role="popup" id="popupMenu" data-theme="a">
+      <ul data-role="listview" data-inset="true" style="min-width:210px;">
+        <li><a href="#">Tìm Kiếm</a></li>
+        <li><a href="#">Đổi Mật Khẩu</a></li>
+        <li><a href="#dangnhap">Đăng Xuất</a></li>
+      </ul>
+    </div>
   </div>
-  
-  <div data-role="content">    
-    	<ul data-role="listview" data-inset="true" data-divider-theme="a">
-    		<li data-role="list-divider">Lịch Chiếu</li>
-    		<li><a href="#">Theo Ngày</a></li>
-    		<li><a href="#">Theo Phim</a></li>
-    		<li data-role="list-divider">Phim</li>
-    		<li><a href="#sapchieu">Sắp Chiếu</a></li>
-    		<li><a href="#">Đang Chiếu</a></li>
-            <li><a href="#">3D</a></li>
-    		<li><a href="#">Bán Vé Sớm</a></li>
-            <li><a href="#">Top 5 Phim Hay Nhất</a></li>
-		</ul>
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true" data-divider-theme="b">
+      <li data-role="list-divider">Lịch Chiếu</li>
+      <li><a href="#">Theo Ngày</a></li>
+      <li><a href="#">Theo Phim</a></li>
+      <li data-role="list-divider">Phim</li>
+      <li><a href="#sapchieu">Sắp Chiếu</a></li>
+      <li><a href="#">Đang Chiếu</a></li>
+      <li><a href="#">3D</a></li>
+      <li><a href="#">Bán Vé Sớm</a></li>
+      <li><a href="#">Top 5 Phim Hay Nhất</a></li>
+    </ul>
   </div>
 </div>
-
-
+<!--Phim sắp chiếu-->
 <div data-role="page" id="sapchieu">
-  <div data-role="header" data-theme="b">
+  <div data-role="header" data-theme="a">
     <h1>Sắp Chiếu</h1>
   </div>
   <div data-role="content">
@@ -76,17 +77,17 @@
       <li><a href="#">Năm Sau Con Lại Về</a><a href="#datve">Đặt Vé</a></li>
       <li><a href="#">Cưới Ngay Kẻo Lở</a><a href="#datve">Đặt Vé</a></li>
       <li><a href="#">Avatar 2</a><a href="#datve">Đặt Vé</a></li>
-    </ul>  
+    </ul>
   </div>
 </div>
-
+<!--đặt vé-->
 <div data-role="page" id="datve">
   <div data-role="header">
     <h1>Đặt Vé</h1>
   </div>
   <div data-role="content">Content</div>
 </div>
-
+<!--đăng ký-->
 <div data-role="page" id="dangky">
   <div data-role="header" data-theme="b">
     <h1>Đăng Ký</h1>
@@ -110,7 +111,7 @@
     </div>
     <div data-role="fieldcontain">
       <label for="select-custom-20">Tỉnh/Thành Phố:</label>
-    <select name="select-custom-20" id="select-custom-20" data-native-menu="false">
+      <select name="select-custom-20" id="select-custom-20" data-native-menu="false">
         <option value="AL">An Giang</option>
         <option value="AK">Bạc Liêu</option>
         <option value="AZ">Cà Mau</option>
@@ -161,15 +162,15 @@
         <option value="WV">West Virginia</option>
         <option value="WI">Wisconsin</option>
         <option value="WY">Wyoming</option>
-    </select>
+      </select>
     </div>
     <div data-role="fieldcontain">
       <label for="select-custom">Quận/Huyện:</label>
-    <select name="select-custom" id="select-custom" data-native-menu="false">
+      <select name="select-custom" id="select-custom" data-native-menu="false">
         <option value="AL">An Giang</option>
         <option value="AK">Bạc Liêu</option>
         <option value="AZ">Cà Mau</option>
-    </select>
+      </select>
     </div>
     <div data-role="fieldcontain">
       <label for="textinput2">Địa Chỉ:</label>
@@ -180,40 +181,54 @@
       <input data-role="date" data-inline="true" type="text">
     </div>
     <div data-role="fieldcontain">
-      <label for="select-custom-23">Giới Tính:</label>
-    <select name="select-custom-21" id="select-custom-21" data-native-menu="false">
-        <option value="choose-one" data-placeholder="true">Chọn một...</option>
+      <label for="select-custom-21">Giới Tính:</label>
+      <select name="select-custom-21" id="select-custom-21" data-native-menu="false">
         <option value="1">Nam</option>
         <option value="2">Nữ</option>
-    </select>
+      </select>
     </div>
     <div data-role="fieldcontain">
-      <label for="textinput2">Hôn Nhân:</label>
-      <input type="text" name="textinput2" id="textinput2" value=""  />
+      <label for="select-custom1">Hôn Nhân:</label>
+      <select name="select-custom1" id="select-custom1" data-native-menu="false">
+        <option value="AL">Độc Thân</option>
+        <option value="AK">Có Gia Đình</option>
+        <option value="AZ">Ly Dị</option>
+      </select>
     </div>
     <div data-role="fieldcontain">
-      <label for="textinput2">Thu Nhập:</label>
-      <input type="text" name="textinput2" id="textinput2" value=""  />
+      <label for="select-custom2">Thu Nhập:</label>
+      <select name="select-custom2" id="select-custom2" data-native-menu="false">
+        <option value="AL">1000USD</option>
+        <option value="AK">5000USD</option>
+        <option value="AZ">7000USD</option>
+      </select>
     </div>
     <div data-role="fieldcontain">
-      <label for="textinput2">Nghề Nghiệp:</label>
-      <input type="text" name="textinput2" id="textinput2" value=""  />
+      <label for="select-custom3">Nghề Nghiệp:</label>
+      <select name="select-custom3" id="select-custom3" data-native-menu="false">
+        <option value="AL">Sinh Viên</option>
+        <option value="AK">Giám Đốc</option>
+        <option value="AZ">Học Sinh</option>
+      </select>
     </div>
     <div data-role="fieldcontain">
-      <label for="textinput2">Học Vấn:</label>
-      <input type="text" name="textinput2" id="textinput2" value=""  />
+      <label for="select-custom4">Học Vấn:</label>
+      <select name="select-custom4" id="select-custom4" data-native-menu="false">
+        <option value="AL">Đại Học</option>
+        <option value="AK">Trung Cấp</option>
+        <option value="AZ">Cao Đẳng</option>
+      </select>
     </div>
-  	
-  
-  
-  
+    <div data-role="controlgroup" data-type="horizontal" align="right"> <a href="#" data-role="button">Đồng Ý</a> <a href="#dangnhap" data-role="button">Không Đồng Ý</a> </div>
   </div>
 </div>
-
-
-
-
-
+<!--trang splash-->
+<div data-role="page" id="splash">
+  <div data-role="content" align="center">
+  	<img name="splash" src="images/splashscreen.png" width="283" height="225" alt="">  
+  </div>
+</div>
+<!---->
 
 
 </body>
