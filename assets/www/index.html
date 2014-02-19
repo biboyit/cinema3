@@ -45,7 +45,7 @@
         </center>
       </li>
     </ul>
-    <input type="text" name="textinput" id="textinput" value=""  />
+    <input type="text" name="mail" id="mail" value=""  />
     <ul data-role="listview" data-inset="true" data-divider-theme="b">
       <li data-role="list-divider">
         <center>
@@ -53,9 +53,9 @@
         </center>
       </li>
     </ul>
-    <input type="password" name="textinput" id="textinput" value=""  />
+    <input type="password" name="pass" id="pass" value=""  />
     <center>
-      <div data-role="controlgroup" data-type="horizontal"> <a href="#home" data-role="button">Đăng Nhập</a> <a href="#dangky" data-role="button">Đăng Ký</a> <a href="#splash" data-role="button">Hủy</a> </div>
+      <div data-role="controlgroup" data-type="horizontal"> <a href="#home" data-role="button">Đăng Nhập</a> <a href="#dangky1" data-role="button">Đăng Ký</a> <a href="#splash" data-role="button">Hủy</a> </div>
     </center>
   </div>
 </div>
@@ -90,6 +90,7 @@
 <div data-role="page" id="sapchieu">
   <div data-role="header" data-theme="a">
     <h1>Sắp Chiếu</h1>
+    
   </div>
   <div data-role="content">
     <ul data-role="listview" data-split-icon="search">
@@ -108,7 +109,11 @@
     <h1>Đặt Vé</h1>
   </div>
   <div data-role="content">
-  	
+  	<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
 
   
   
@@ -116,31 +121,31 @@
   
   </div>
 </div>
-<!--đăng ký-->
-<div data-role="page" id="dangky">
+<!--đăng ký1-->
+<div data-role="page" id="dangky1">
   <div data-role="header" data-theme="b">
     <h1>Đăng Ký</h1>
   </div>
   <div data-role="content">
     <div data-role="fieldcontain">
-      <label for="textinput2">Họ Tên:</label>
-      <input type="text" name="textinput2" id="textinput2" value=""  />
+      <label for="hoten">Họ Tên:</label>
+      <input type="text" name="hoten" id="hoten" value=""  />
     </div>
     <div data-role="fieldcontain">
       <label for="textinput2">Email:</label>
-      <input type="text" name="textinput2" id="textinput2" value=""  />
+      <input type="text" name="maildk" id="maildk" value=""  />
     </div>
     <div data-role="fieldcontain">
-      <label for="textinput2">Điện Thoại:</label>
-      <input type="text" name="textinput2" id="textinput2" value=""  />
+      <label for="dienthoai">Điện Thoại:</label>
+      <input type="text" name="dienthoai" id="dienthoai" value=""  />
     </div>
     <div data-role="fieldcontain">
-      <label for="textinput2">Số CMND:</label>
-      <input type="text" name="textinput2" id="textinput2" value=""  />
+      <label for="cmnd">Số CMND:</label>
+      <input type="text" name="cmnd" id="cmnd" value=""  />
     </div>
     <div data-role="fieldcontain">
-      <label for="select-custom-20">Tỉnh/Thành Phố:</label>
-      <select name="select-custom-20" id="select-custom-20" data-native-menu="false">
+      <label for="tinh">Tỉnh/Thành Phố:</label>
+      <select name="tinh" id="tinh" data-native-menu="false">
         <option value="AL">An Giang</option>
         <option value="AK">Bạc Liêu</option>
         <option value="AZ">Cà Mau</option>
@@ -194,70 +199,95 @@
       </select>
     </div>
     <div data-role="fieldcontain">
-      <label for="select-custom">Quận/Huyện:</label>
-      <select name="select-custom" id="select-custom" data-native-menu="false">
+      <label for="huyen">Quận/Huyện:</label>
+      <select name="huyen" id="huyen" data-native-menu="false">
         <option value="AL">An Giang</option>
         <option value="AK">Bạc Liêu</option>
         <option value="AZ">Cà Mau</option>
       </select>
     </div>
     <div data-role="fieldcontain">
-      <label for="textinput2">Địa Chỉ:</label>
-      <input type="text" name="textinput2" id="textinput2" value=""  />
+      <label for="diachi">Địa Chỉ:</label>
+      <input type="text" name="diachi" id="diachi" value=""  />
     </div>
     <div data-role="fieldcontain">
-      <label for="textinput2">Ngày Sinh:</label>
-      <input data-role="date" data-inline="true" type="text">
+      <label for="ngaysinh">Ngày Sinh:</label>
+      <input data-role="date" data-inline="true" type="text" name="ngaysinh" id="ngaysinh">
     </div>
     <div data-role="fieldcontain">
-      <label for="select-custom-21">Giới Tính:</label>
-      <select name="select-custom-21" id="select-custom-21" data-native-menu="false">
+      <label for="gioitinh">Giới Tính:</label>
+      <select name="gioitinh" id="gioitinh" data-native-menu="false">
         <option value="1">Nam</option>
         <option value="2">Nữ</option>
       </select>
     </div>
     <div data-role="fieldcontain">
-      <label for="select-custom1">Hôn Nhân:</label>
-      <select name="select-custom1" id="select-custom1" data-native-menu="false">
+      <label for="honnhan">Hôn Nhân:</label>
+      <select name="honnhan" id="honnhan" data-native-menu="false">
         <option value="AL">Độc Thân</option>
         <option value="AK">Có Gia Đình</option>
         <option value="AZ">Ly Dị</option>
       </select>
     </div>
     <div data-role="fieldcontain">
-      <label for="select-custom2">Thu Nhập:</label>
-      <select name="select-custom2" id="select-custom2" data-native-menu="false">
+      <label for="thunhap">Thu Nhập:</label>
+      <select name="thunhap" id="thunhap" data-native-menu="false">
         <option value="AL">1000USD</option>
         <option value="AK">5000USD</option>
         <option value="AZ">7000USD</option>
       </select>
     </div>
     <div data-role="fieldcontain">
-      <label for="select-custom3">Nghề Nghiệp:</label>
-      <select name="select-custom3" id="select-custom3" data-native-menu="false">
+      <label for="nghenghiep">Nghề Nghiệp:</label>
+      <select name="nghenghiep" id="nghenghiep" data-native-menu="false">
         <option value="AL">Sinh Viên</option>
         <option value="AK">Giám Đốc</option>
         <option value="AZ">Học Sinh</option>
       </select>
     </div>
     <div data-role="fieldcontain">
-      <label for="select-custom4">Học Vấn:</label>
-      <select name="select-custom4" id="select-custom4" data-native-menu="false">
+      <label for="hocvan">Học Vấn:</label>
+      <select name="hocvan" id="hocvan" data-native-menu="false">
         <option value="AL">Đại Học</option>
         <option value="AK">Trung Cấp</option>
         <option value="AZ">Cao Đẳng</option>
       </select>
     </div>
-    <div data-role="controlgroup" data-type="horizontal" align="right"> <a href="#" data-role="button">Đồng Ý</a> <a href="#dangnhap" data-role="button">Không Đồng Ý</a> </div>
+    <div data-role="fieldcontain">
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>&nbsp;</legend>
+        <input type="checkbox" name="checkdk" id="checkdk" class="custom" value="" />
+        <label for="checkdk">&nbsp;Đồng Ý Với Các Điều Kiện Của Rạp&nbsp;</label>
+      </fieldset>
+    </div>
+    
+    <div data-role="controlgroup" data-type="horizontal" align="right"> <a href="#dangky2" data-role="button">Đồng Ý</a> <a href="#dangnhap" data-role="button">Không Đồng Ý</a> </div>
   </div>
 </div>
-<!--trang splash-->
-<div data-role="page" id="splash">
-  <div data-role="content" align="center">
-  	<img name="splash" src="images/splashscreen.png" width="283" height="225" alt="">  
+
+<!--đăng ký 2-->
+<div data-role="page" id="dangky2">
+  <div data-role="header" data-theme="b">
+    <h1>Đăng Ký</h1>
+  </div>
+  <div data-role="content">
+    <div data-role="fieldcontain">
+      <label for="matkhau">Mật Khẩu:</label>
+      <input type="text" name="matkhau" id="matkhau" value=""  />
+    </div>
+    <div data-role="fieldcontain">
+      <label for="xacnhanmatkhau">Xác Nhận Mật Khẩu:</label>
+      <input type="text" name="xacnhanmatkhau" id="xacnhanmatkhau" value=""  />
+    </div>
+    <div data-role="controlgroup" data-type="horizontal" align="right"> <a href="#" data-role="button">Đồng Ý</a> <a href="#" data-role="button">Không Đồng Ý</a> </div>
+  	
+  
+  
+  
+  
+  
   </div>
 </div>
-<!---->
 
 
 </body>
