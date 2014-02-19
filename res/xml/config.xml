@@ -1,25 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-    <widget xmlns = "http://www.w3.org/ns/widgets"
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
 
-        xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.phonegap.example"
-        version     = "1.0.0"
-        versionCode = "10" >
+ http://www.apache.org/licenses/LICENSE-2.0
 
-        <!-- versionCode is optional and Android only -->
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+-->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        id        = "io.cordova.helloCordova"
+        version   = "2.0.0">
+    <name>Hello Cordova</name>
 
-        <preference name="phonegap-version" value="3.3.0" />
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
 
-        <name>Sample Config.xml</name>
+    <author href="http://cordova.io" email="dev@cordova.apache.org">
+        Apache Cordova Team
+    </author>
 
-        <description>
-        An example for phonegap build docs. 
-        </description>
+    <access origin="*"/>
 
-        <author href="http://yoursite.com" email="you@youremail.com">
-        Your Name
-        </author>
+    <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
+    <content src="index.html" />
 
-    </widget>
-	<preference name="SplashScreen" value="splash" />
-<preference name="SplashScreenDelay" value="10000" />
+    <preference name="loglevel" value="DEBUG" />
+    <!--
+      <preference name="splashscreen" value="resourceName" />
+      <preference name="backgroundColor" value="0xFFF" />
+      <preference name="loadUrlTimeoutValue" value="20000" />
+      <preference name="InAppBrowserStorageEnabled" value="true" />
+      <preference name="disallowOverscroll" value="true" />
+    -->
+    <!-- This is required for native Android hooks -->
+    <feature name="App">
+        <param name="android-package" value="org.apache.cordova.App" />
+    </feature>
+	<feature name="SplashScreen">
+    	<param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+	</feature>
+</widget>

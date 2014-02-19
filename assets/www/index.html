@@ -25,6 +25,20 @@
 <meta charset="utf-8">
 <title>Cinema4U</title>
 <script src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        navigator.splashscreen.show();
+    }
+
+    </script>
+
 <link href="jquery-mobile/jquery.mobile.theme-1.4.1.min.css" rel="stylesheet" type="text/css">
 <link href="jquery-mobile/jquery.mobile.structure-1.4.1.min.css" rel="stylesheet" type="text/css">
 <script src="jquery-mobile/jquery-1.9.1.min.js" type="text/javascript"></script>
